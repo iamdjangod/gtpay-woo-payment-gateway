@@ -15,11 +15,11 @@ With this GTPay Woocommerce Payment Gateway plugin, you will be able to accept t
 * __Visa__
 * __Interswitch__
 
-= Note =
+# Note
 
 This plugin is meant to be used by merchants in Nigeria.
 
-= Plugin Features =
+# Plugin Features
 
 *   __Accept payment__ via Interswitch, MasterCard, and Visa.
 * 	__Seamless integration__ into the WooCommerce checkout page.
@@ -27,7 +27,7 @@ This plugin is meant to be used by merchants in Nigeria.
 * 	__Send SMS notification__ to customer on successful payment. This feature has to be enabled and configured before it will work, you will need an SMS API.
 
 
-= Suggestions / Feature Request =
+# Suggestions / Feature Request 
 
 If you have suggestions or a new feature request, feel free to get in touch with me via email elnino.akin@gmail.com
 
@@ -35,7 +35,7 @@ You can also add me on Facebook http://facebook.com/deluakin
 
 
 
-#Installation ==
+# Installation
 
 = Automatic Installation =
 * 	Login to your WordPress Admin area
@@ -44,25 +44,25 @@ You can also add me on Facebook http://facebook.com/deluakin
 *	From the search result you will see "Woocommerce GTPay Payment Plugin" click on "Install Now" to install the plugin
 *	A popup window will ask you to confirm your wish to install the Plugin.
 
-= Note: =
+# Note
 If this is the first time you've installed a WordPress Plugin, you may need to enter the FTP login credential information. If you've installed a Plugin before, it will still have the login information. This information is available through your web server host.
 
-*       Click "Proceed" to continue the installation. The resulting installation screen will list the installation as successful or note any problems during the install.
-*       If successful, click "Activate Plugin" to activate it.
+*   Click "Proceed" to continue the installation. The resulting installation screen will list the installation as successful or note any problems during the install.
+*   If successful, click "Activate Plugin" to activate it.
 * 	Click the "Settings" link to Open the settings page for the plugin.
 *	Configure your "GTPay" settings. See below for details.
 
-= Manual Installation =
+# Manual Installation
 * 	Download the plugin zip file
 * 	Login to your WordPress Admin. Click on "Plugins > Add New" from the left hand menu.
-*       Click on the "Upload" option, then click "Choose File" to select the zip file from your computer. Once selected, press "OK" and press the "Install Now" button.
-*       Activate the plugin.
+*   Click on the "Upload" option, then click "Choose File" to select the zip file from your computer. Once selected, press "OK" and press the "Install Now" button.
+*   Activate the plugin.
 * 	Click the "Settings" link to Open the settings page for the plugin.
 *	Configure your "GTPay" settings. See below for details.
 
 
 
-= Configure the plugin =
+# Configure the plugin
 *       Goto plugins and find the "GTPay WooCommerce Payment Gateway" plugin, then click the Settings link.
 *       __Enable/Disable__ - check the box to enable GTPay Payment Gateway.
 *       __Title__ - allows you to determine what your customers will see this payment option as on the checkout page.
@@ -76,16 +76,16 @@ If this is the first time you've installed a WordPress Plugin, you may need to e
 
 
 
-#Frequently Asked Questions ==
+# Frequently Asked Questions
 
-= What Do I Need To Use The Plugin =
+What Do I Need To Use The Plugin
 
 1.	You need to have Woocommerce plugin installed and activated on your WordPress site.
 2.	You need to register for a Merchant ID and Hash Key from any GTBank branch.
 
 
 
-#Changelog ==
+# Changelog
 
 = 3.2 =
 *   Changed the logo according to Interswitch recomendation.
