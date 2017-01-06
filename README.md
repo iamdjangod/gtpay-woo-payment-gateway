@@ -23,7 +23,7 @@ This plugin is meant to be used by merchants in Nigeria.
 
 *   __Accept payment__ via Interswitch, MasterCard, and Visa.
 * 	__Seamless integration__ into the WooCommerce checkout page.
-* 	__Add Naira__ currency symbol. To select it go to go to __WooCommerce > Settings__ from the left hand menu, then click __General__ from the top tab. From __Currency__ select Naira, then click on __Save Changes__ for your changes to be effected.
+* 	__Add Naira__ currency symbol. To select it go to go to __WooCommerce > Settings__ from the left hand menu, then click __General__ from the top tab. From __Currency__ select Naira, then click on __Save Changes__ for your changes to be effected.
 * 	__Send SMS notification__ to customer on successful payment. This feature has to be enabled and configured before it will work, you will need an SMS API.
 
 
@@ -47,7 +47,7 @@ You can also add me on Facebook http://facebook.com/deluakin
 # Note
 If this is the first time you've installed a WordPress Plugin, you may need to enter the FTP login credential information. If you've installed a Plugin before, it will still have the login information. This information is available through your web server host.
 
-*   Click "Proceed" to continue the installation. The resulting installation screen will list the installation as successful or note any problems during the install.
+*   Click "Proceed" to continue the installation. The resulting installation screen will list the installation as successful or note any problems during the install.
 *   If successful, click "Activate Plugin" to activate it.
 * 	Click the "Settings" link to Open the settings page for the plugin.
 *	Configure your "GTPay" settings. See below for details.
@@ -55,7 +55,7 @@ If this is the first time you've installed a WordPress Plugin, you may need to e
 # Manual Installation
 * 	Download the plugin zip file
 * 	Login to your WordPress Admin. Click on "Plugins > Add New" from the left hand menu.
-*   Click on the "Upload" option, then click "Choose File" to select the zip file from your computer. Once selected, press "OK" and press the "Install Now" button.
+*   Click on the "Upload" option, then click "Choose File" to select the zip file from your computer. Once selected, press "OK" and press the "Install Now" button.
 *   Activate the plugin.
 * 	Click the "Settings" link to Open the settings page for the plugin.
 *	Configure your "GTPay" settings. See below for details.
