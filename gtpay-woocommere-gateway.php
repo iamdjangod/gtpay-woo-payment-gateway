@@ -42,12 +42,20 @@ function woocommerce_gtpay_init() {
             $this->hashkey = $this->settings['hashkey'];
 
             $this->sms = $this->settings['sms'];
+            $this->mode = $this->settings['mode'];
             $this->sms_url = $this->settings['sms_url'];
             $this->sms_message = $this->settings['sms_message'];
 
-            $this->posturl = 'https://ibank.gtbank.com/GTPay/Tranx.aspx';
-            $this->geturl = 'https://ibank.gtbank.com/GTPayService/gettransactionstatus.json';
 
+            if ($this->mode == "yes") {
+
+                $this->posturl = 'https://ibank.gtbank.com/GTPay/Tranx.aspx';
+                $this->geturl = 'https://ibank.gtbank.com/GTPayService/gettransactionstatus.json';
+            } else {
+
+                $this->posturl = 'https://gtweb2.gtbank.com/orangelocker/gtpaym/tranx.aspx';
+                $this->geturl = 'https://gtweb2.gtbank.com/GTPayService/gettransactionstatus.json';
+            }
             $this->msg['message'] = "";
             $this->msg['class'] = "";
 
@@ -211,6 +219,11 @@ jQuery("body").block(
                     'type' => 'checkbox',
                     'label' => __('Enable GTPay Payment Module.', 'gtpay'),
                     'default' => 'no'),
+                'mode' => array(
+                    'title' => __('Live/Demo', 'gtpay'),
+                    'type' => 'checkbox',
+                    'default' => 'no',
+                    'label' => __('Tick To Enable Live Mode', 'gtpay')),
                 'title' => array(
                     'title' => __('Title:', 'gtpay'),
                     'type' => 'text',
@@ -232,12 +245,13 @@ jQuery("body").block(
                 'gtpay_tranx_curr' => array(
                     'title' => __('Currency', 'gtpay'),
                     'type' => 'text',
-                    'description' => __('This parameter represents the ISO currency code representing the currency in which the transaction is been carried out. Acceptable values Naira  - (566). USD  - (840)"')),
+                    'default' => 'no',
+                    'description' => __('Enter either 566 or NGN for Naira OR  840 or USD for Dollar"')),
                 'sms' => array(
                     'title' => __('SMS Notification', 'gtpay'),
                     'type' => 'checkbox',
                     'default' => 'no',
-                    'description' => __('Enable SMS notification after sucessful payment on GTPay', 'gtpay')),
+                    'description' => __('Enable SMS notification after successful payment on GTPay', 'gtpay')),
                 'sms_url' => array(
                     'title' => __('Send SMS REST API URL'),
                     'type' => 'text',
@@ -329,8 +343,7 @@ jQuery("body").block(
                     $hashkey = $this->hashkey;
                     $my_hash = hash("sha512", $mert_id . $tranxid . $hashkey);
                     $ch = curl_init();
-                    $url = "https://ibank.gtbank.com/GTPayService/gettransactionstatus.json?"
-                            . "mertid={$mert_id}&amount={$total_amount}&tranxid={$tranxid}&hash={$my_hash}";
+                    $url = $this->geturl. "?mertid={$mert_id}&amount={$total_amount}&tranxid={$tranxid}&hash={$my_hash}";
                     curl_setopt_array($ch, array(
                         CURLOPT_URL => $url,
                         CURLOPT_NOBODY => false,
