@@ -65,6 +65,7 @@ If this is the first time you've installed a WordPress Plugin, you may need to e
 # Configure the plugin
 *       Goto plugins and find the "GTPay WooCommerce Payment Gateway" plugin, then click the Settings link.
 *       __Enable/Disable__ - check the box to enable GTPay Payment Gateway.
+        __Live/Demo__ - check the box to switch to LIVE mode after successful demo tests.
 *       __Title__ - allows you to determine what your customers will see this payment option as on the checkout page.
 *       __Description__ - controls the message that appears under the payment fields on the checkout page. Here you can list the types of cards you accept.
 *        __GTPay Merchant ID__  - enter your gtpay merchant id given to you by GTBank
